@@ -43,6 +43,6 @@ export function handleSummary(data) {
     const time = new Date().toLocaleTimeString();
     const safeTime = time.replace(/:/g, '-');
     return {
-        [`report${safeTime}.html`]: htmlReport(data),
+        [`reports/report${safeTime}.html`]: htmlReport(data),
     }
 }
